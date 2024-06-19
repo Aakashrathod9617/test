@@ -1,0 +1,28 @@
+package com.rays.form;
+
+import javax.persistence.Column;
+import javax.validation.constraints.NotEmpty;
+
+import com.rays.common.BaseForm;
+
+public class PMBMForm extends BaseForm{
+	
+	@NotEmpty(message = "please enter projectName")
+	private String projectName;
+	
+	@NotEmpty(message = "please enter projectDescription")
+	private String projectDescription;
+	
+	@NotEmpty(message = "please enter startDate")
+	private String startDate;
+	
+	@NotEmpty(message = "please enter endDate")
+	private String endDate;
+	
+	@NotEmpty(message = "please enter equipmentName")
+	private String equipmentName;
+	
+	@NotEmpty(message = "please enter equipmentType")
+	private String equipmentType;
+
+}
